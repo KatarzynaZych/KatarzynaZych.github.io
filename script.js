@@ -46,7 +46,7 @@ $(document).ready(function() {
 
   function handleDatatableRender(taskData, boards) {
     $tasksContainer.empty();
-    boards.forEach(board => {
+    boards.forEach(board = > {
       availableBoards[board.id] = board;
     });
 
@@ -70,7 +70,7 @@ $(document).ready(function() {
       method: 'GET',
       contentType: "application/json",
       success: function(tasks) {
-        tasks.forEach(task => {
+        tasks.forEach(task = > {
           availableTasks[task.id] = task;
         });
 
